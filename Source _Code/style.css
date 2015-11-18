@@ -1,0 +1,207 @@
+/*Start nav menu*/
+nav {
+background-color:#2C5463;
+height:40px;
+width:1000px;
+position:fixed;
+}
+
+nav ul{
+font-family:Times, Arial, Verdana;
+font-size:15px;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+nav ul li {
+  display: block;
+  position: relative;
+  float:left; 
+  right:0px;
+}
+nav li ul { 
+  display: none; 
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #2C5463;
+  color: #ffffff;  
+  margin-left: 10px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:120px;
+  text-align:center;
+ }
+ nav ul li a:hover { 
+  background: #617F8A; 
+}
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+nav li:hover li {
+  float: none;
+  font-size: 15px; /*Font of lower-level navigation items*/
+}
+nav li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+nav li:hover li a:hover { 
+  background: #95A9B1;    
+}
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* End nav menu */
+
+/*Styling page layout*/
+body{
+background:#CCC;
+margin: 110px 0px 0px 180px;
+}
+#topdiv{
+text-align:center;
+position:fixed;
+top: 0px;
+left:0px;
+width: 100%;
+color:#CCC;
+background:#333;
+padding:0px;
+}
+#bottomdiv{
+text-align:center;
+position:fixed;
+bottom: 0px;
+left:0px;
+width: 100%;
+color:#CCC;
+background:#333;
+padding:0px;
+}
+#heading{
+text-align:center;
+font-family:Times;
+font-size:30px;
+}
+details{
+float:center;
+font-size:16px;
+text-align:center;
+}
+#sitemantra{
+font-size:20px;
+}
+#siteinfo{
+font-size:20px;
+}
+/*End of page layout styling*/
+/*styling login form container: using gradients to set the background of container*/
+#login,#registration{
+color:#fff;
+background: #2d2d2d;
+background: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(60,60,60)),
+  color-stop(0.74, rgb(43,43,43)),
+  color-stop(1, rgb(60,60,60))
+);
+background:-moz-linear-gradient(
+ center bottom,
+ rgb(60,60,60) 0%,
+ rgb(43,43,43) 74%,
+ rgb(60,60,60) 100%
+);
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+margin: 10px;
+width: 400px;
+}
+#login,#otherAccountDetails,#welcomemsg,#registration{ /*registration form alignment styling*/
+margin-left:300px;
+margin-right:500px;
+}
+#displayAppointments{
+margin-left:auto;
+margin-right:auto;
+}
+#login fieldset{
+ padding: 10px;
+}
+textarea{/*textarea has larger dimensions*/
+width:260px;
+height: 170px;
+padding: 12px 20px 0px 20px;
+margin:0 0 20px 0;
+}
+/*Styling nput fields*/
+input.text,textarea{
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius:15px;
+border:solid 1px #444;
+font-size: 14px;
+width: 90%;
+padding: 7px 8px 7px 8px;
+background: #ddd;
+background: -moz-linear-gradient(
+        center bottom,
+        rgb(225,225,225) 0%,
+        rgb(215,215,215) 54%,
+        rgb(173,173,173) 100%,
+    );
+    background: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(225,225,225)),
+	color-stop(0.54, rgb(215,215,215)),
+	color-stop(1, rgb(173,173,173))
+    );
+color: #333;
+text-shadow: 0px 1px 0px black;
+-moz-box-shadow: 0px 1px 0px #777;
+-webkit-box-shadow: 0px 1px 0px #777;
+box-shadow: 0px 1px 0px #777;
+}
+/*Styling the header and submit button*/
+#login h4 {
+color:#fff;
+text-shadow:0px -1px 0px #000;
+text-align:center;
+padding:8px;
+margin: 0px;
+font-weight:normal;
+font-size:18px;
+font-family:  Times,Lucida Grande,Helvetica, Arial, sans-serif;
+border-bottom:  #181818 1px;
+-moz-box-shadow: 0px 1px 0px #3a3a3a;
+-webkit-box-shadow: 0px 1px 0px #3a3a3a;
+}
+button{/*button style*/
+width:103px;
+height:30px;
+border:none;
+float:right;
+font-size:12px;
+font-family:Times;
+border-radius: 15px;
+}
+#otherAccountDetails{/*Not yet registered and forgot password styling*/
+font-weight:normal;
+font-size:18px;
+text-decoration: none;
+padding: 7px 15px 3px 15px;
+}
+#welcome{/*welcome message on homepage styling*/
+font-size:26px;
+}
+/*end of styling login form*/
+
